@@ -12,15 +12,27 @@ class ProxyAwareFileSystemSymlinkTarget extends FileSystemSymlinkTarget implemen
 {
     use ProxyAwareTargetTrait;
 
-    #[Flow\Inject]
-    protected Bootstrap $bootstrap;
+    /**
+     * @Flow\Inject
+     * @var Bootstrap
+     */
+    protected $bootstrap;
 
-    #[Flow\Inject]
-    protected UriBuilder $uriBuilder;
+    /**
+     * @var UriBuilder
+     * @Flow\Inject
+     */
+    protected $uriBuilder;
 
-    #[Flow\Inject]
-    protected ResourceManager $resourceManager;
+    /**
+     * @var ResourceManager
+     * @Flow\Inject
+     */
+    protected $resourceManager;
 
-    #[Flow\Inject]
-    protected ConfigurationService $configurationService;
+    /**
+     * @var ConfigurationService
+     * @Flow\Inject
+     */
+    protected $configurationService;
 }

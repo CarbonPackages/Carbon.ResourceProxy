@@ -10,12 +10,22 @@ use Carbon\ResourceProxy\ResourceManagement\ResourceNotFoundException;
 
 class ResourceController extends ActionController
 {
-    #[Flow\Inject]
-    protected ResourceRepository $resourceRepository;
 
-    #[Flow\Inject]
-    protected ResourceManager $resourceManager;
+    /**
+     * @var ResourceRepository
+     * @Flow\Inject
+     */
+    protected $resourceRepository;
 
+    /**
+     * @var ResourceManager
+     * @Flow\Inject
+     */
+    protected $resourceManager;
+
+    /**
+     * @param string $resourceIdentifier
+     */
     public function indexAction(string $resourceIdentifier)
     {
         /**

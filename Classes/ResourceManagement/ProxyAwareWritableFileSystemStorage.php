@@ -17,8 +17,8 @@ class ProxyAwareWritableFileSystemStorage extends WritableFileSystemStorage impl
     protected ConfigurationService $configurationService;
 
     /**
-     * @Flow\Inject
      * @var ResourceManager
+     * @Flow\Inject
      */
     protected $resourceManager;
 
