@@ -1,0 +1,6 @@
+Carbon\ResourceProxy\ImportCacheInterface:
+  factoryObjectName: Neos\Flow\Cache\CacheManager
+  factoryMethodName: getCache
+  arguments:
+    1:
+      value: Carbon_Resource_Proxy_Import

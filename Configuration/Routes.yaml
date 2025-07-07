@@ -1,0 +1,8 @@
+-
+  name: 'Carbon-ResourceProxy'
+  uriPattern: 'carbon/resourceproxy/{resourceIdentifier}'
+  defaults:
+    '@package':    'Carbon.ResourceProxy'
+    '@controller': 'Resource'
+    '@action':     'index'
+  httpMethods: ['GET']

@@ -1,0 +1,13 @@
+Neos:
+  Flow:
+    resource:
+      storages:
+        defaultPersistentResourcesStorage:
+          storage: 'Carbon\ResourceProxy\ResourceManagement\ProxyAwareWritableFileSystemStorage'
+      targets:
+        localWebDirectoryPersistentResourcesTarget:
+          target: 'Carbon\ResourceProxy\ResourceManagement\ProxyAwareFileSystemSymlinkTarget'
+    mvc:
+      routes:
+        'Carbon.ResourceProxy':
+          position: 'before Neos.Neos'
